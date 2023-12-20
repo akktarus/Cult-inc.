@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cult incorporated</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="Main_header">
+        <h1>Cult inc.</h1>
+      </div>
+    </header>
+
+    <div class="Main">
+      <main>
+        <div class="main_start" id="startplayer">
+          <div class="nbplayer_text">
+            <label for="fnbplayer">Nombre de joueurs :</label>
+          </div>
+          <div class="nbplayer_input">
+            <input type="number" id="fnbplayer" min="2" max="3" maxlength="1" />
+          </div>
+          <div class="nbplayer_button">
+            <input type="button" value="Démarrer la partie !" id="sendnb" />
+          </div>
+        </div>
+        <div class="main_event" id="event_manag">
+          <div class="nbtour">
+            <p class="nb_tour">Tour: </p>
+            <p class="tour" id="nb_turn">0</p>
+          </div>
+          <div class="event_name">
+            <p id="nameEvent">Le nom de l'évenement</p>
+          </div>
+          <div class="event">
+            <p id="descEvent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A beatae
+              reprehenderit, porro praesentium maxime, illo fuga enim earum
+              provident nesciunt cupiditate, vel quidem sed. Aspernatur dolorum
+              quaerat enim doloremque numquam.
+            </p>
+          </div>
+        </div>
+        <div class="main_count" id="counting">
+          <div class="main_count_money_p3">
+           
+            <div class="text_money">
+              <p>Argent restant :</p>
+            </div>
+            <div class="amount_money">
+              <p id="Player1">200</p>
+              <img class="img_money" src="./img/money.png" alt="">
+            </div>
+          </div>
+          <div class="main_count_money_p2">
+            <div class="text_money">
+              <p>Argent restant :</p>
+            </div>
+            <div class="amount_money">
+              <p id="Player2">200</p>
+              <img class="img_money" src="./img/money.png" alt="">
+            </div>
+          </div>
+          <div class="main_count_money_p3" id="p3">
+            <div class="text_money">
+              <p>Argent restant :</p>
+            </div>
+            <div class="amount_money">
+              <p id="Player3">200</p>
+              <img class="img_money" id="img_coin" src="./img/money.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="main_money_counting" id="money_counting">
+          <div class="main_gain_control">
+            <div class="main_gain">
+              <div class="text_money">
+                <p>Gain joueur 1 :</p>
+              </div>
+              <div class="amount_money">
+                <input type="number" id="AmountGainP1" step="5" min="0"/>
+              </div>
+            </div>
+            <div class="main_gain">
+              <div class="text_money">
+                <p>Gain joueur 2 :</p>
+              </div>
+              <div class="amount_money">
+                <input type="number" id="AmountGainP2" step="5" min="0"/>
+              </div>
+            </div>
+            <div class="main_gain" id="p3gain">
+              <div class="text_money">
+
+                <p>Gain joueur 3 :</p>
+              </div>
+              <div class="amount_money">
+                <input type="number" id="AmountGainP3" step="5" min="0"/>
+              </div>
+            </div>
+          </div>
+          <div class="main_lost_control">
+            <div class="main_lost">
+              <div class="text_money">
+                <p>Perte joueur 1 :</p>
+              </div>
+              <div class="amount_money">
+                <input type="number" id="AmountlostP1" step="25" min="0"/>
+              </div>
+            </div>
+            <div class="main_lost">
+              <div class="text_money">
+                <p>Perte joueur 2 :</p>
+              </div>
+              <div class="amount_money">
+                <input type="number" id="AmountlostP2" step="25" min="0"/>
+              </div>
+            </div>
+            <div class="main_lost" id="p3loss">
+              <div class="text_money">
+                <p>Perte joueur 3 :</p>
+              </div>
+              <div class="amount_money">
+                <input type="number" id="AmountlostP3" step="25" min="0"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="Main_footer" id="footer_button">
+      <footer>
+        <div class="end_turn">
+          <input type="button" value="Fin de tour" id="endTurnB" />
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./JS/index.js"></script>
+</html>

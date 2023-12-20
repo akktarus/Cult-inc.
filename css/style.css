@@ -1,0 +1,77 @@
+div {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+  background-size: 100%;
+}
+
+/* Number of players */
+
+.main_start {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.nbplayer_text,
+.nbplayer_input {
+  margin-bottom: 10px;
+}
+
+/* Affichage de l'evenement en cours */
+.main_event {
+  flex-direction: column;
+  display: none;
+}
+.nb_tour{
+  margin: 10px;
+}
+.event,
+.event_name {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 0.1%;
+}
+
+/* affichage argent restant */
+.main_count {
+  justify-content: space-around;
+  display: none;
+}
+.amount_money{
+  justify-content: center;
+}
+
+.main_count_money_p1,
+.main_count_money_p2,
+.main_count_money_p3 {
+  flex-direction: column;
+  width: auto;
+}
+
+.main_money_counting {
+  flex-direction: column;
+  display: none;
+  align-items: stretch;
+}
+
+
+.img_money{
+  width: 10%;
+  justify-content: flex-start;
+  margin: 5px;
+}
+.main_gain,
+.main_lost {
+  flex-direction: column;
+}
+.Main_footer {
+  margin: 5%;
+  display: none;
+}
+
+
